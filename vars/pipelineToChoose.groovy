@@ -1,17 +1,10 @@
-#!/usr/bin/env groovy       
-                
-def dev(){                       
+def dev() {                       
     def pipelineName                       
-     pipelineName = 'DEV'                      
-    
-                        
+    pipelineName = 'DEV'                      
     return pipelineName       
 }
-def pre(){                       
+def pre() {                       
     def pipelineName;                       
-                                            
-      pipelineName = 'PRE'       
-    
-                        
+    pipelineName = 'PRE'       
     return pipelineName       
 }
