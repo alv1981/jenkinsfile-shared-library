@@ -1,20 +1,17 @@
 #!/usr/bin/env groovy       
                 
-def dev(env){                       
-    def pipelineName;                       
-                           
-    if(env.APP_TYPE == 'test'){                  
-      pipelineName = 'pipelineForTest'       
-    }
+def dev(){                       
+    def pipelineName                       
+     pipelineName = 'DEV'                      
+    
                         
     return pipelineName       
 }
-def pre(env){                       
+def pre(){                       
     def pipelineName;                       
-                           
-    if(env.APP_TYPE == 'test'){                  
-      pipelineName = 'pipelineForTest'       
-    }
+                                            
+      pipelineName = 'PRE'       
+    
                         
     return pipelineName       
 }
